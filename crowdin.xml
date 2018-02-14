@@ -11,10 +11,10 @@
   <project name="crowdin" path="crowdin" remote="crd" revision="master" />
 
   <!-- Frameworks -->
-  <project name="frameworks_base" path="frameworks/base" remote="crd" />
+  <project name="frameworks_base" path="frameworks/base" revision="oreo-mr1" remote="crd" />
 
   <!-- Manifest -->
-  <project name="manifest" path="manifest" remote="crd" />
+  <project name="manifest" path="manifest" remote="crd" revision="oreo-mr1" />
 
   <!-- Apps -->
   <project name="packages_apps_CardinalOTA" path="packages/apps/CardinalOTA" remote="crd" />

@@ -4,13 +4,13 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <default revision="refs/tags/android-8.1.0_r12"
+  <default revision="refs/tags/android-8.1.0_r14"
            remote="aosp"
            sync-j="4" />
 
   <remote  name="crd"
            fetch="https://github.com/Cardinal-AOSP/"
-           revision="oreo-mr1" />
+           revision="rebase" />
 
   <remote  name="github"
            fetch="https://github.com/" />
@@ -67,7 +67,7 @@
   <remove-project name="platform/frameworks/av" />
   <project name="frameworks_av" path="frameworks/av" remote="crd" />
   <remove-project name="platform/frameworks/base" />
-  <project name="frameworks_base" path="frameworks/base" remote="crd" />-->
+  <project name="frameworks_base" path="frameworks/base" remote="crd"  revision="oreo-mr1" /> -->
   <remove-project name="platform/frameworks/native" />
   <project name="frameworks_native" path="frameworks/native" remote="crd" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -100,30 +100,30 @@
   <project name="hardware_qcom_wlan" path="hardware/qcom/wlan" remote="crd" />
   
   <!-- Manifest -->
-  <project name="manifest" path="manifest" remote="crd" />
+  <project name="manifest" path="manifest" remote="crd" revision="oreo-mr1" />
 
   <!-- Apps -->
   <remove-project name="platform/packages/apps/Bluetooth" />
-  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="crd" />
+  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/Calendar" />
-  <project name="packages_apps_Calendar" path="packages/apps/Calendar" remote="crd" />
+  <project name="packages_apps_Calendar" path="packages/apps/Calendar" remote="crd" revision="oreo-mr1" />
   <!--<remove-project name="platform/packages/apps/Camera2" />
   <project name="packages_apps_Camera2" path="packages/apps/Camera2" remote="crd" />-->
-  <project name="packages_apps_CardinalOTA" path="packages/apps/CardinalOTA" remote="crd" />
+  <project name="packages_apps_CardinalOTA" path="packages/apps/CardinalOTA" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/DeskClock" />
-  <project name="packages_apps_DeskClock" path="packages/apps/DeskClock" remote="crd" />
+  <project name="packages_apps_DeskClock" path="packages/apps/DeskClock" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/Dialer" />
-  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="crd" />
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
-  <project name="packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="crd" />
-  <project name="packages_apps_FMRadio" path="packages/apps/FMRadio" remote="crd" />
+  <project name="packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="crd" revision="oreo-mr1" />
+  <project name="packages_apps_FMRadio" path="packages/apps/FMRadio" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/Gallery2" />
-  <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="crd" />
+  <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/Launcher3" />
-  <project name="packages_apps_Launcher3" path="packages/apps/Launcher3" remote="crd" />
+  <project name="packages_apps_Launcher3" path="packages/apps/Launcher3" remote="crd" revision="oreo-mr1" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="crd" />
-  <project name="packages_apps_Wings" path="packages/apps/Wings" remote="crd" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="crd" revision="oreo-mr1" />
+  <project name="packages_apps_Wings" path="packages/apps/Wings" remote="crd" revision="oreo-mr1" />
 
   <!-- Services -->
   <remove-project name="platform/packages/services/Telecomm" />
@@ -154,7 +154,7 @@
   <project name="system_vold" path="system/vold" remote="crd" />
 
   <!-- Vendor -->
-  <project name="vendor_cardinal" path="vendor/cardinal" remote="crd" />
+  <project name="vendor_cardinal" path="vendor/cardinal" remote="crd" revision="oreo-mr1" />
 <!-- Cardinal-AOSP end -->
 
 <!-- Misc Repo's for additional Compatibility -->
